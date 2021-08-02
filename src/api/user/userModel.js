@@ -8,10 +8,6 @@ class userModel {
   findUserByEmail(email) {
     return User.findOne(email);
   }
-
-  deleteUserByEmail(email) {
-    return User.findOneAndDelete(email)
-  }
 }
 
 module.exports = new userModel();
