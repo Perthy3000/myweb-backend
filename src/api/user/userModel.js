@@ -1,12 +1,12 @@
 const User = require("../../db/model/User");
 
 class userModel {
-  createUser(obj) {
+  addUser(obj) {
     return User.create(obj);
   }
 
-  findUserByEmail(email) {
-    return User.findOne(email);
+  findUser(filter) {
+    return User.findOne(filter);
   }
 }
 
